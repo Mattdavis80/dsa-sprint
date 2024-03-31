@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin
+@CrossOrigin("http://localhost:3000")
 public class BinaryTreeController {
 
     @Autowired
@@ -24,11 +24,6 @@ public class BinaryTreeController {
     public BinaryTree createBinaryTree(@RequestBody String userInputBinaryTree){
         System.out.println(userInputBinaryTree);
         return binaryTreeService.createBinaryTree(userInputBinaryTree);
-    }
-
-    @GetMapping("/process-numbers")
-    public String processNumbers(){
-        return "process Numbers";
     }
 
     @GetMapping("/previous-trees")

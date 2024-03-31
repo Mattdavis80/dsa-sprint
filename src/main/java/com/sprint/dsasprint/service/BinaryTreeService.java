@@ -7,7 +7,7 @@ import com.sprint.dsasprint.entity.BinaryTreeNode;
 import com.sprint.dsasprint.repository.BinaryTreeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
+import com.google.gson.Gson;
 
 import java.util.List;
 
@@ -44,6 +44,8 @@ public class BinaryTreeService {
     public List<BinaryTree> getPreviousTrees(){
         return (List<BinaryTree>) binaryTreeRepository.findAll();
     }
+
+    // add better error handling for most of this.....
 
 
 }

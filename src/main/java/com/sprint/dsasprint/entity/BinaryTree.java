@@ -9,10 +9,10 @@ public class BinaryTree {
     @GeneratedValue(generator = "binaryTree_sequence")
     private long id;
 
-    @Column
+    @Column(length = 4000)
     private String inputNumbers;
 
-    @Column
+    @Column(length = 4000)
     private String binaryTreeStructure;
 
     public long getId() {
