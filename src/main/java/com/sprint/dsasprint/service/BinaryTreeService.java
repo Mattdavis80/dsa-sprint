@@ -7,7 +7,6 @@ import com.sprint.dsasprint.entity.BinaryTreeNode;
 import com.sprint.dsasprint.repository.BinaryTreeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.google.gson.Gson;
 
 import java.util.List;
 
